@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.div{
+    border: 5px solid mediumvioletred;
+    width: 275px;
+    height: 235px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding: 45px;
+    border-radius: 20px;
+    color: #ff1100;
+    background-color: #ECEFF1;
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="div">Calculator <hr color="red" size="2px">
+            <label>Enter first number: </label> <br>
+            <input type="text" name="name" id="num1"> <br><br>
+
+            <label>Enter second number: </label> <br>
+            <input type="text" name="name" id="num2"> <br><br>
+
+            <button type="button" onclick="GetAdd()">GetAdd</button>
+            <button type="button" onclick="GetSub()">GetSub</button>
+            <button type="button" onclick="GetMul()">GetMul</button>
+            <button type="button" onclick="GetDiv()">GetDiv</button><br><br>
+            <button type="button" onclick="Result()">Result</button> <br>
+            <input type="text" name="name" id="res" readonly>
+            
+
+       </div>
+
+    </form>
+
+    <script>
+        //  var myname=prompt("Enter Message here");
+        //  console.log(myname)
+ 
+        function GetAdd(){
+
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var result=(Number(n1)+Number(n2)); 
+            document.getElementById("res").value=result;
+
+        }
+            
+        function GetSub(){
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var result=(Number(n1)-Number(n2));  
+            document.getElementById("res").value=result;
+        }
+
+        function GetMul(){
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var result=(Number(n1)*Number(n2));  
+            document.getElementById("res").value=result;
+        }
+
+        function GetDiv(){
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var result=(Number(n1)/Number(n2));  
+            document.getElementById("res").value=result;
+        }
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

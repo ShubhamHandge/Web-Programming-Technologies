@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+
+
+
+    <script>
+
+    var mydate= new Date();
+    document.getElementById("d1").innerHTML=mydate;
+    document.getElementById("d2").innerHTML=mydate.getDate();
+    document.getElementById("d3").innerHTML=mydate.getFullYear();
+    document.getElementById("d4").innerHTML=mydate.getDay();
+    document.getElementById("d5").innerHTML=mydate.getMonth();
+
+
+
+    function myclock(){
+        var d=new Date();
+        document.getElementById("d6").innerHTML=d.toLocaleTimeString();
+    }
+    setInterval(myclock,1000);
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>AddressCopy</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+          109.6deg,
+          rgba(61, 131, 97, 1) 11.2%,
+          rgba(28, 103, 88, 1) 91.1%
+        );
+      }
+      .parent {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 950px;
+        height: 300px;
+        margin-top: 250px;
+        background-image: radial-gradient(
+          circle farthest-corner at 10% 20%,
+          rgba(100, 43, 115, 1) 0%,
+          rgba(4, 0, 4, 1) 90%
+        );
+        box-shadow: 6px 6px 6px black;
+      }
+      .reset .btn {
+        height: 60px;
+        border-radius: 50%;
+      }
+      .container {
+        padding-top: 20px;
+        padding-left: 40px;
+      }
+      button {
+        margin-bottom: 250px;
+      }
+      textarea {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <form action="">
+        <div class="container">
+          <span class="temp">
+            <textarea
+              name="temp"
+              id="temp"
+              cols="30"
+              rows="10"
+              placeholder="Temporary Address"
+            ></textarea>
+          </span>
+          <span class="copy">
+            <button
+              type="button"
+              class="btn btn-success btn-lg"
+              onclick="copyadd()"
+            >
+              Copy to Permanent Address
+            </button>
+          </span>
+          <span class="reset"
+            ><button
+              type="reset"
+              class="btn btn-danger"
+              onclick="history.go(0)"
+            >
+              Reset
+            </button></span
+          >
+          <span class="perma">
+            <textarea
+              name="perma"
+              id="perma"
+              cols="30"
+              rows="10"
+              placeholder="Permanent Address"
+            ></textarea>
+          </span>
+        </div>
+      </form>
+    </div>
+    <script>
+      const copyadd = () => {
+        var t = document.getElementById("temp").value;
+        document.getElementById("perma").innerText = t;
+      };
+    </script>
+  </body>
+</html>

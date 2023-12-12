@@ -1,0 +1,22 @@
+14/10/23
+
+How to check node version 
+> node -v 
+How to check npm version
+> npm -v 
+
+How to install json server 
+> npm i json-server -g 
+
+How to start json-server and upload database file on it.
+json-server --watch -p 8888 db.json 
+
+
+Step to make request 
+step1: create object of XMLHttpRequest 
+step2: write callback function 
+step3: make request 
+ste4: send request 
+
+*how to make get request 
+*how to make delete request

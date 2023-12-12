@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var emp={
+                 id:101,
+                 name:"shubham",
+                 post:"HR",
+                 salary:85000,
+                 detail:function(){
+                    //return "ID:"+this.id+"Name:"+this.name+"Post:"+this.post+"Salary:"+this.salary
+                    //or
+                    return `ID:${this.id} Name:${this.name} Post:${this.post} Salary:${this.salary}` ;
+                }
+                
+                };
+                document.write(emp.name,emp.post);
+                //document.write(emp.detail());
+                document.write(emp.detail());
+
+            
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var city=["pune","Mumbai","Nagpur","Nashik"];
+        console.log(city);
+        //how to find array length
+        console.log(city.length);
+
+         //how to find array size
+         console.log(city.lenght-1);
+         console.log(city[2]);
+         city[1]="Mumbai";
+         console.log(city);
+
+
+         //Array Method
+         //1. push() :it insert values at last index of an array
+        city.push("Chandwad");
+        console.log(city);
+
+        //2.pop() : it remove values from last index of an array
+        city.pop();
+        console.log(city);
+        
+        //3. unshift() : it insert values at the starting index of an array
+        city.unshift("Latur","Kolhapur");
+        console.log(city);
+
+        //4. shift() : it remove values from the start index of an array
+        city.shift("Latur");
+        console.log(city);
+
+        //5.splice (start-index,deleted-count,value-to-insert);
+
+        city.splice(3,2,"jalgoan","baramati"); // here we add 2 values at 3rd index
+        console.log(city);
+
+        city.splice(4,2); // here we remove 2 values from 4rd index
+        console.log(city);
+
+        city.splice(2,2,"solapur","Satara"); // value to insert
+        console.log(city);
+
+        //6. toString() : it convert array data into string
+        console.log(city.toString());
+        
+        //7.join(seperator) : it convert array data into string but in this we can pass one paramter as seperator
+        console.log(city.join());
+        console.log(city.join("*"));
+        console.log(city.join(" "));
+        //concat(): it is use to marge two or more array
+         var boys= ["Rupesh","Aniket","Raja"]
+         var girls=["Rupali","Rani"]
+         console.log(boys.concat(girls,"Swati","Swapnil"));
+
+        // merging array by using spread operator
+        var student=[...boys,...girls,"Arti"];
+        console.log(student);
+
+        //advance-for
+        
+        //for of():it is use to display array values
+        for(let std of student){
+                document.write(std+", ");
+            }
+        document.write("<br>");
+
+        //for-in(): it is use to display array index
+        for(let std in student){
+                document.write(std+", ");
+        }
+
+    </script>
+</body>
+</html>

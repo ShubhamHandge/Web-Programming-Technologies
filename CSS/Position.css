@@ -1,0 +1,104 @@
+
+/* for header  */
+header{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    justify-content: center;
+    z-index: 1;
+    position: sticky;
+}
+
+
+/* for header logo */
+.logo{
+    border: 5px solid red;
+    height: 80px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+    box-shadow: 4px 2px 5px black;
+}
+
+/* for header line  */
+.myline{
+    font-size: 30px;
+    color: violet;
+    font-weight: 700;
+    margin-left: 10px;
+    text-shadow: 4px 2px 2px black;
+}
+
+/* relative position  */
+
+.position_relative{
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    left: 40px;
+    top: 30px;
+    position: relative;
+}
+
+/* relative position and absolute position*/
+.parent{
+    border: 2px solid red;
+    width: 400px;
+    height: 250px;
+    left: 40px;
+    top: 30px;
+    position: relative;
+    background-color: gray;
+}
+.child{
+    border: 5px solid violet;
+    width: 150px;
+    height: 25px;
+    left: 40px;
+    top: 30px;
+    position: absolute;
+    background-color: aqua;
+}
+
+/* fixed position */
+.fixed{
+    border: 5px solid;
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    top: 800px;
+    right: 0px;
+}
+
+/* sticky position */
+.sticky{
+    border: 5px solid red;
+    text-align: center;
+    background-color: aqua;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+}
+
+/* to add all div  */
+.container div{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 18px;
+    border-radius: 13px;
+}
+
+/* class add to container */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+

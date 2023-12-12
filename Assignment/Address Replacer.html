@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .form{
+        margin-left: 368px;
+        border: 5px solid grey;
+        width: 300px;
+        height: 729px;
+        margin-top: 112px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 45px;
+        background-color: gainsboro;
+    }
+
+    .button{
+    font-size: medium;
+    font-style: revert;
+    background-color: darkseagreen;
+    }
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+        <form class="form">
+            <h3>Address Alternate System </h3>
+            <hr color="orange" size="3px">
+            <label>Current Address: </label>
+            <textarea name="Current Address" id="CA" cols="30" rows="20"></textarea>
+
+            <button class="button"  type="button" onclick="Getinfo()">Same as Current Address</button>
+            <hr color="lightgreen" size="3px">
+
+            <label>Permanent Address: </label>
+            <textarea name="Permanent Address" id="PA" cols="30" rows="20"></textarea>
+            
+        </form>
+
+        <script>
+            function Getinfo(){
+            var info=document.getElementById("CA").value;
+            document.getElementById("PA").value=info;
+
+            }
+
+
+
+        </script>
+
+
+
+</div>
+
+
+
+</body>
+</html>

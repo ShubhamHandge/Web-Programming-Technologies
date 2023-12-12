@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <img  id="img1" src="../Assets/Image/facebook-search.webp" alt="" height="300px" width="500px"> <br>
+    <button id="btnhide" type="button">HIDE IMAGE</button> 
+    <button id="btnshow" type="button">SHOW IMAGE</button>
+    
+    <hr><hr>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis officiis a provident aut esse commodi ex asperiores quo, minima saepe eaque! Vitae dolor, voluptatibus ad sed, atque vero nisi assumenda dignissimos minima possimus suscipit earum, consequuntur ipsa quisquam enim! Voluptatum labore praesentium quibusdam nostrum quae dolor ab dolores eius voluptatibus? Veniam consequuntur repudiandae, natus ab quis quaerat earum quam culpa iste, unde facere libero omnis! Modi quo magni dolorum laboriosam nostrum blanditiis alias sunt tenetur recusandae ratione odio necessitatibus quaerat aspernatur sed consectetur, omnis ipsa fugiat fuga esse! Aspernatur voluptate numquam incidunt dolores sapiente adipisci nesciunt iure consequuntur est aut, voluptatum quaerat obcaecati blanditiis placeat consequatur accusamus quia aliquid, deleniti omnis dolorem assumenda harum debitis? Assumenda sunt provident quod cumque vel totam, nobis impedit neque veniam distinctio mollitia modi nemo molestiae perspiciatis, voluptatibus voluptatum blanditiis temporibus quibusdam exercitationem. Nostrum aliquam modi consectetur corrupti facere, accusamus qui beatae omnis a!</p>
+    <button id="btntoggleslide" type="button">TOGGLESLIDE</button> 
+    <button id="btnslideup" type="button">SLIDEUP PARA</button> 
+    <button id="btnslidedown" type="button">SLIDEDOWN PARA</button> 
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btnhide").click(()=>{
+                $("#img1").hide(1000,()=>{window.alert("Image Hide Successfully")});
+            })
+
+            
+            $("#btnshow").click(()=>{
+                $("#img1").show(1000,()=>{window.alert("Image Show Successfully")});
+            })
+
+        
+            $("#btntoggleslide").click(()=>{
+                $("#para").slideToggle(1000,()=>{window.alert("TOGGLE slide Successfully")});
+            })
+
+        
+            $("#btnslideup").click(()=>{
+                $("#para").slideUp(1000,()=>{window.alert("para slideup Successfully")});
+            })
+
+        
+            $("#btnslidedown").click(()=>{
+                $("#para").slideDown(1000,()=>{window.alert("para slidedown Successfully")});
+            })
+
+        });
+
+        
+
+
+        
+
+
+    </script>
+</body>
+</html>

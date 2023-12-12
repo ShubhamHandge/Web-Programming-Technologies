@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="cls1">Greeting</h1>
+
+    <button type="button" id="btn1" >HIDE</button>
+    <button type="button" id="btn2" >show</button>
+    <hr><hr>
+
+    <img id="img1" src="../Assets/Image/facebook-search.webp" alt="Avatar">
+    <button type="button" id="btn3">ToggleImage</button>
+    <hr><hr>
+
+    <h2 id="myName">SHUBHAM</h2>
+
+
+    <script>                                
+        $(document).ready(function(){           //annonomous function .. use by id ,class,name
+        
+
+            $("#btn1").click(()=>{
+                $(".cls1").hide();
+            })
+
+            $("#btn2").click(()=>{
+                $(".cls1").show();
+            })
+
+
+            $("#btn3").click(()=>{
+                $("#img1").toggle();
+            })
+
+            // mouse enter then chnages in page
+            $("#myName").mouseenter(function() { 
+                $(this).css({"backgroundColor":"aqua","textAlign":"center","color":"red","border":"5px double black"});
+            })
+
+            $("#myName").mouseleave(function() {
+                $(this).css({"backgroundColor":"lightgreen","textAlign":"center","color":"blue","border":"5px double black"});
+            })
+
+            $("#myName").click(function() {
+                $(this).css({"backgroundColor":"yellow","textAlign":"right","color":"black","border":"5px double black"});
+            })
+
+
+
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>

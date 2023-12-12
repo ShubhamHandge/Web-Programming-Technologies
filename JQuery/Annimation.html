@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Annimation.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box1">
+        SEE
+    </div> <br><br>
+    <div class="box2">JAADU</div>
+    <div style="text-align: center;">
+        <button id="btnflip" type="button">FLIP</button>
+    </div>
+<script>
+    $(document).ready(function(){
+        $(".box1").animate({"left":"300px","border-radius":"50%"} ,1000)
+    });
+
+    
+    $("#btnflip").click(()=>{
+        $(".box2").css({"transform":"rotateY(323deg)"})
+    });
+
+
+    
+
+
+
+
+
+
+</script>
+</body>
+</html>

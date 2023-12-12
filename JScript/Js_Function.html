@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        //1.Default Function 
+        function greeting(){
+            document.write("Hello Shubh <br>");    
+        }
+        greeting();
+
+ 
+        function greeting1(){
+            return "hello shubham";    
+        }
+        var std1=greeting1();
+        document.write(std1);
+
+
+        //2.Parameterize function
+        function add(n1,n2){
+            return n1+n2;
+        }
+        document.write("<br>",add(600,100));
+        document.write("<br>",add(1299,1560));
+
+        var a1=500,a2=600;
+        document.write("<br>",add(a1,a2))
+
+        //3.Anonymous function: function with no name is called anonymous function
+        var Welcome= function(){
+            return " WELCOME BACK TO AIT MUMBAI";
+        }
+        document.write("<br>",Welcome());
+
+        var mul=function(n1,n2,n3){
+            return n1*n2*n3;
+        }
+        document.write("<br>",mul(2,2,2));
+
+
+        //4.Arrow Function: function with no name and no function keyword to present we use => sign 
+        //after parenthesis
+        var sub=() => "This is Arrow Function";
+        document.write("<br>",sub(100,50));
+
+
+        var sub=(n1,n2) => n1-n2;
+        document.write("<br>",sub(100,50));
+
+
+        //5. Optional parameterized function
+        var fullname=(fname,lname,mname ="") =>{
+            return fname+mname+lname;
+        }
+        document.write("<br>",fullname("shubham ","handge"));
+        document.write("<br>",fullname("shubham ","handge","dilip "));
+
+        //6.Rest parameterized function: when we dont know how many parameter are required in that case we use it,in rest parameterize function we use spread parameter(...)
+        var stdlist=(...std)=>{
+            return std;
+        }
+        document.write("<br>",stdlist("shubh","rushi","ro-hit","shivi"));
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+
+
+
+<!-- CREATE DIGITAL WATCH -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+    .div{
+    border: 5px solid grey;
+    color: red;
+    width: 122px;
+    border-radius: 50%;
+    height: 109px;
+    padding: 38px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    text-align-last: auto;
+    display: flex;
+    justify-content: center;
+    background: black;
+    background-color: black;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>                    
+    
+
+    <div class="div" id="d1"></div>
+    <script>
+
+function myclock(){
+        var d=new Date();
+        document.getElementById("d1").innerHTML=d.toLocaleTimeString();
+    }
+    setInterval(myclock,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Document</title>
+ </head>
+ <body>
+        <!-- for DOM -->
+    <h1 id="d1"></h1>
+    <h1 id="d2">AIT YCP</h1>
+    <h1 id="d3">JSCRIPT</h1>
+    <h1 id="d4"></h1>
+    <h1 id="d5"></h1>
+    <img id="d6" src="../Assets/Image/DSC00446-1.JPG" alt=""> <br>
+
+
+
+
+
+
+    <script>
+    // 1. doucument write():
+    document.write("Welcome You All in JS session <br>");
+    document.write(10+50);
+
+
+    //2. window.alert()
+    window.alert("Good Morning Student");
+    window.alert(50*9);
+
+
+    //3. console.log()
+    console.log("Display output in console");
+    console.log(1000-3000);
+     
+    //4.DOM (document object model) ..... we can access and edit inner-HTML element  
+
+       //set data by using DOM
+        document.getElementById("d1").innerHTML="SHUBHAM HANDGE";  
+
+        //setting style value by using DOM 
+        document.getElementById("d2").style.color="red";
+        document.getElementById("d2").style.backgroundColor="grey";
+
+        //get data by using DOM
+        var data = document.getElementById("d3").innerHTML;  
+
+        //setting attribute value by using DOM
+        document.getElementById("d6").src="../Assets/Image/DSC00446-1.JPG";
+
+    </script>
+ </body>
+ </html>

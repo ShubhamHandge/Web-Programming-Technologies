@@ -1,0 +1,15 @@
+.txtspecial:hover{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.class{
+    border: 5px double red;
+    height: 251px;
+    width: 400px;
+    margin: auto;
+    padding: 35px;
+    background-color: aqua;
+}

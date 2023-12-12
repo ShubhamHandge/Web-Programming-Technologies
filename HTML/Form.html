@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+
+<div>
+    <label for="fullname">Enter your fullname:</label>
+    <input type="text" id="fullname" name="=fullname" minlength="3" maxlength="15" pattern="[a-zA-Z ]{3,15}" required><br><br>
+</div>
+
+<div>
+    <label for="pass">Enter your Password:</label>
+    <input type="password" name="pass" id="pass" placeholder="Enter password here" required><br><br>
+</div>
+
+<div>
+    <label>Enter your Email:</label>
+    <input type="Email" name="Email" placeholder="Enter email here" required>    <br><br>
+</div>
+
+<div>
+    <label>Select your Gender</label>
+    <input type="radio" name="Gender" value="MALE">MALE
+    <input type="radio" name="Gender"  value="FEMALE">FEMALE
+    <input type="radio" name="Gender"  value="TRANSGENDER">TRANSGENDER       <br><br>
+</div>
+
+<div>
+    <label>Select your Qualification</label>
+    <input type="checkbox" name="Qualification" value="SSC">SSC
+    <input type="checkbox" name="Qualification" value="DIPLOMA">DIPLOMA
+    <input type="checkbox" name="Qualification" value="UG">UG
+    <input type="checkbox" name="Qualification" value="PG">PG   <br><br>
+</div>
+
+<div>
+    <label>Select your course:</label> 
+        <select name="course" multiple>   
+            <option value="">Select course</option>
+            <option value="JAVA">JAVA</option>
+            <option value="PYTHON">PYTHON</option>
+            <option value="C">C</option>
+            <option value="PHP">PHP</option>
+        </select>
+</div> <br><br>
+
+<div>
+    <label>Enter Your Feedback:</label>
+    <textarea name="Feedback" cols="10" rows="10"></textarea>
+</div>  <br><br>
+
+<div> 
+    <label>Select DATE OF BIRTH</label>
+    <input type="date" name="date"> 
+</div> <br><br>
+
+<div>
+    <label>Upload Document</label>
+    <input type="file" name="file">
+</div> <br><br>
+
+<div> 
+    <label>Course fees: </label>
+    <input type="text" name="fees" value="106000" readonly>
+</div> <br><br>
+
+<div>
+    <button type=" button">submit</button>
+</div>
+
+</form>
+</body>
+</html>

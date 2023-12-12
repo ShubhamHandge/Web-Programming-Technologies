@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+function greeting(){
+    document.write("<br>This is greeting function.<br>");
+}
+ //greeting();
+
+
+ function Welcome(emp,arg1){
+    document.write("Welcome You "+emp);
+    arg1();
+ }
+ //var myname="shubham handge";
+ //Welcome(myname,greeting);
+
+
+
+ // use of SetTimeout() :  // display the message -- delay in ms
+
+ //setTimeout(()=>{                
+  //  greeting();
+ //},2000);
+
+
+ // use of SetInterval() :     // display the message -- repeated... in ms
+ setInterval(()=>{                
+  greeting();
+ },2000);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+    div{
+         border: 5px solid violet;
+        height: 262px;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        background-color: mediumturquoise;
+        padding: 10px;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="imgpath" src="../Assets/Image/google image.jpeg" alt="google" height="200px" width="300px"><br>
+        <strong id="imgname">Google</strong><br><br>
+        <button type="button" onclick="toggleImage()">Toggle Image</button>
+
+    </div>
+
+    <script>
+
+        let cond=false;
+
+        function toggleImage(){
+            cond=!cond;
+            if(cond){
+            document.getElementById("imgpath").src="../Assets/Image/facebook-search.webp";
+            document.getElementById("imgname").innerHTML="FaceBook";
+        }else{
+            document.getElementById("imgpath").src="../Assets/Image/google image.jpeg";
+            document.getElementById("imgname").innerHTML="Google";
+        }
+
+        }
+
+    </script>
+</body>
+</html>

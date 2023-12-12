@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var emp={
+            id:101,
+            name:"shubh",
+            post:"Full Stack Developer",
+            single:true,
+            address:{
+            flatno:"A123",
+            buildingname:"Sai",
+            city:"Pune",
+            }
+            
+
+        };
+        
+        document.write(`ID:${emp.id}   Name:${emp.name}  Post:${emp.post} Single:${emp.single} <br><br>`);
+
+        emp.name="Shubham";  // to change name in object
+        document.write(`ID:${emp.id}   Name:${emp.name}  Post:${emp.post} Single:${emp.single}  City:${emp.address.city}  <br><br>`);
+
+    //json data 
+        var jsondata={"id":201,
+            "name":"RAJA",
+            "post":"Manager",
+            "single":true};
+
+
+    // Converting object data into json
+    //json.stringify
+
+    var objectIntoJson=JSON.stringify(emp);
+    document.write(objectIntoJson);
+
+    document.write("<br><br>")
+
+    //converting json data into javascript object
+    //json.parse
+    var jsonIntoObject = JSON.parse(objectIntoJson);
+    document.write(jsonIntoObject.id)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

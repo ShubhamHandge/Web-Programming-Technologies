@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+
+        // es-5 feature 
+
+
+        //1. trim() : // trim function - remove extra spaces from string 
+        var msg= "    hello Friends";
+        document.write(msg);
+        console.log(msg);
+        console.log(msg.trim());   
+        console.log(msg.trimStart());
+        console.log(msg.trimEnd());
+
+
+        //2. forEach() : it call another method once for each array
+        var std=["sham","ram","shubh","ajinkya"];
+        std.forEach((val,index)=>{
+        document.write(`${index} ${val}`);
+        });
+        document.write("<br>");
+        //or
+        var num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        num.forEach((val)=>{
+            document.write(`${val},`);
+        });
+        document.write("<br>");
+
+        //3.map() :it call another method once for each array element and it returm new array after performing manipulationwith given array
+        var mapOut= num.map((val)=>{
+             return val*2;
+        });
+        document.write(`${mapOut},<br>`);
+
+
+        //4.filter() : it call another method once for each array element and it returm new array of those element who satisfy given condition
+
+        var filterOut=num.filter((val)=>{
+            //return val%2==0;
+            return val>=10 && val<=30;
+        });
+        document.write(`${filterOut},<br>`);
+
+         //5.every() : it call another method once for each array element and it returm true value if all array element  satisfy given condition otherwise it return false
+
+         var everyOut=num.every((val)=>{
+        
+            return val>1;
+        });
+        document.write(`${everyOut},<br>`);
+
+        //6.some() : it call another method once for each array element and it returm true value if all array element  satisfy given condition otherwise it return false
+
+         var someOut=num.some((val)=>{
+        
+        return val>1;
+       });
+         document.write(`${someOut},<br>`);
+
+         //7.reduce/reduceRight (prev,next) () : it call another method once for each array element and it return singlr value
+
+         var reduceOut=num.reduce((prev,next)=>{
+        
+        return prev=next;
+       });
+         document.write(`${reduceOut},<br>`);
+
+ 
+
+            // es-6  feature 
+
+        //1.let() :it is used to crete block scope variable, It cann not be re-declare, it can't be used before     decalration 
+
+        //2.const() : it is used to create block scope const variable, At the time of declaration we have to initialize it , It value can't be change
+        
+            // myname="shubham";
+            // console.log(myname);
+            // var myname;
+            // var myname=1230;
+            // console.log(myname);
+
+            let myname;
+             myname="shubham";
+             console.log(myname);
+
+            const pi=3.14;
+            console.log(pi);
+
+            var num1=1000;
+            function demo(){
+                let num2=2000;
+                const num3=3000;
+
+                console.log(num1);
+                console.log(num2);
+                console.log(num3);
+            }
+            demo();
+            console.log(num1);
+            console.log(num2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #1d4350, #a43931);
+      }
+      form {
+        margin-top: 250px;
+        height: 300px;
+        width: 500px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 25px;
+        position: relative;
+        padding: 40px;
+        color: white;
+        background-color: #fbab7e;
+        background: linear-gradient(to right, #000000, #434343);
+
+        backdrop-filter: blur(10px);
+      }
+      form label {
+        font-weight: 600;
+      }
+      form input {
+        width: 100px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      .num1 {
+        padding-right: 35px;
+      }
+      .btngrp {
+        margin-top: 10px;
+      }
+      #res {
+        margin-top: 10px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Grade Check</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>Grade Check</h2>
+      <div class="num1">
+        <label for="marks">Enter Marks (Out of 100) : </label>
+        <input
+          type="text"
+          name="marks"
+          id="marks"
+          pattern="[0-9]"
+          maxlength="3"
+        />
+      </div>
+      <br /><br />
+      <div class="btngrp">
+        <button type="button" class="btn btn-outline-primary" onclick="grade()">
+          Grade Check
+        </button>
+      </div>
+      <h4 id="res">Grade : -----</h4>
+    </form>
+    <script>
+      const grade = () => {
+        var m = Number(document.getElementById("marks").value);
+        if (m > 100 || m < 0) {
+          alert("ANDHA HAI Kya");
+        } else if (m > 80) {
+          document.getElementById("res").innerText =
+            "Grade: " + "A" + " -  Destinction";
+        } else if (m > 60) {
+          document.getElementById("res").innerText =
+            "Grade: " + "B" + " - First Class";
+        } else if (m > 50) {
+          document.getElementById("res").innerText =
+            "Grade: " + "C" + " - Second Class";
+        } else if (m > 35) {
+          document.getElementById("res").innerText =
+            "Grade: " + "D" + " - Third Class";
+        } else {
+          document.getElementById("res").innerText =
+            "Grade: " + "F" + " - You Failed";
+        }
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

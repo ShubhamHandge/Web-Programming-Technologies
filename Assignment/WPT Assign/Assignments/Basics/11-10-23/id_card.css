@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(to left, #8e0e00, #1f1c18); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8e0e00, #1f1c18);
+}
+.idcard{
+    margin-top: 50px;
+    box-shadow: rgba(44, 65, 40, 0.855) 0px 5px 15px;
+    height: 650px;
+    background-color: rgba(14, 104, 239, 0.521);
+    backdrop-filter: blur(50px);
+    width: 400px;
+    text-align: center;
+    border: 4px groove black;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 4px;
+    position: relative;
+}
+.logo{
+    padding-top: 20px;
+    padding-right: 300px;
+    filter: drop-shadow(5px 5px 15px red);
+}
+.image img{
+    border-radius: 50%;
+    border: 2px groove red;
+    filter: drop-shadow(5px 5px 15px rgb(33, 32, 32));
+
+}
+.details .line{
+    padding: 4px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 1px;
+    width: 390px;
+}
+.idcard p{
+    position: absolute;
+    left: 70%;
+    top: 92%;
+}

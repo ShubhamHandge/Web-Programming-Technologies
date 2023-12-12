@@ -1,0 +1,52 @@
+{
+  "product": [
+    {
+      "id": 101,
+      "name": "laptop",
+      "price": "65444",
+      "company": "HP"
+    },
+    {
+      "id": 103,
+      "name": "mouse",
+      "price": "500",
+      "company": "iball"
+    },
+    {
+      "id": 104,
+      "name": "keyboard",
+      "price": "300",
+      "company": "IBM"
+    },
+    {
+      "id": 105,
+      "name": "usb",
+      "price": "1000",
+      "company": "sandisk"
+    },
+    {
+      "id": 106,
+      "name": "cable",
+      "price": "800",
+      "company": "polycab"
+    },
+    {
+      "id": 107,
+      "name": "adapter",
+      "price": "500",
+      "company": "MI"
+    },
+    {
+      "id": 108,
+      "name": "hi",
+      "price": "10",
+      "company": "byee"
+    },
+    {
+      "id": 109,
+      "name": "you",
+      "price": "14444",
+      "company": "shamu"
+    }
+  ]
+}

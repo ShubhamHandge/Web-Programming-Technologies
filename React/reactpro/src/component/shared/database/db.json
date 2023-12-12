@@ -1,0 +1,10 @@
+{
+    "products":[
+        {"id":101,"name":"laptop","price":57000,"company":"HP"},
+        {"id":102,"name":"mobile","price":10000,"company":"IPHONE"},
+        {"id":103,"name":"adapter","price":12500,"company":"DELL"},
+        {"id":104,"name":"cable","price":1700,"company":"POLYCAB"},
+        {"id":105,"name":"socket","price":2000,"company":"ASUS"},
+        {"id":106,"name":"USB","price":1346,"company":"SANDISK"}
+    ]
+}

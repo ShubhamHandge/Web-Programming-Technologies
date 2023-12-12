@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Greeting</h1>
+    <button id="btn1" type="button"> Click on me</button>
+
+
+
+
+
+
+    <script>                                
+        $(document).ready(function(){           //annonomous function .. use by id ,class,name
+            $("button").click(function(){
+                window.alert("Welcome you all in my session");
+            })
+                    //or
+
+            // $("#btn1").click(function(){
+            //     window.alert("Welcome you all in my session");
+            // })
+                    //or
+
+            // $("h1").click(function(){
+            //     window.alert("Welcome you all in my session");
+            // })
+
+           
+        })
+
+
+
+
+    </script>
+</body>
+</html>

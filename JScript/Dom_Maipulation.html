@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <script src="./dom_Manipulation.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="d1">
+        <p id="p1">THIS IS PARA-1</p>
+        <p id="p2">THIS IS PARA-2</p>
+    </div>
+
+    <button type="button" onclick="DisplayFruit()">DisplayFruit</button>
+
+    <ul id="ul1">
+
+    </ul>
+
+
+    <script>
+         // it return items
+        var ParentE1 = document.getElementById("d1");
+        console.log(ParentE1);
+
+        //how to create element
+        var NewEle = document.createElement("p");
+        console.log(NewEle);
+        NewEle.setAttribute("id","p3");
+        NewEle.setAttribute("class","cls1");
+
+        //how to create text node
+        var textNode = document.createTextNode("This is para-3");
+
+        //how to insert textNode in inside element
+        NewEle.appendChild(textNode);
+    
+        ParentE1.appendChild(NewEle);  // inserting NewEle into ParentE1
+    
+        //how to remove Newfile from parentE1 element
+        ParentE1.removeChild(NewEle);
+
+        //----------------x---------------------x----------------x------------------x-------------------------xx
+        var  fruits=["apple","mango","banana","grapes"];
+        
+        function DisplayFruit(){ 
+            var parentsUl= document.getElementById("ul1");
+
+            for(var i=0; i<fruits.length;i++){
+                var li=document.createElement("li");
+                 li.innerHTML = fruits[i];
+                parentsUl.appendChild(li);
+        }
+    }
+
+
+
+    </script>
+
+
+</body>
+</html>
